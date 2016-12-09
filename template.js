@@ -20,7 +20,7 @@
 exports.description = 'Create a WordPress theme based on Foundation.';
 
 // Template-specific notes to be displayed before question prompts.
-exports.notes = '_Project Classes and Namespaces_ should not contain "Hatch", "Linchpin" or "WordPress" and ' +
+exports.notes = '_Project Classes and Namespaces_ should not contain "Hatch", "Rebar", "Linchpin" or "WordPress" and ' +
     'should be a unique ID not already in use in wordpress.org plugins or themes directory. _Theme ' +
     'name_ should be a human-readable title, and doesn\'t need to contain ' +
     'the word "WordPress", although it may. For example, a theme named "Awesome ' +
@@ -30,11 +30,11 @@ exports.notes = '_Project Classes and Namespaces_ should not contain "Hatch", "L
 
 exports.after = 'You should now _cd to_your_base_path' +
     '_ and install project dependencies with _npm ' +
-    'install && bower install_.  After that, you may execute project tasks with _grunt_. For ' +
-    'more information about installing and configuring Grunt, please see ' +
+    'install && bower install_.  After that, you may execute project tasks with _gulp_. For ' +
+    'more information about installing and configuring Gulp, please see ' +
     'the Getting Started guide:' +
     '\n\n' +
-    'http://gruntjs.com/getting-started';
+    'https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md';
 
 // Any existing file or directory matching this wildcard will cause a warning.
 // exports.warnOn = '*';
