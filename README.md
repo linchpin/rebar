@@ -27,14 +27,14 @@ Once grunt-init is installed, place this template (either manually or cloned fro
 ### Linux/Mac Users
 
 ```
-git clone https://github.com/linchpinagency/hatch.git ~/.grunt-init/rebar
+git clone https://github.com/linchpinagency/rebar.git ~/.grunt-init/rebar
 ```
 This will create a folder named 'rebar' within your .grunt-init the name of the folder is utilized later on when using the project scaffold.
 
 ### Windows Users
 
 ```
-git clone https://github.com/linchpinagency/hatch.git %USERPROFILE%/.grunt-init/rebar
+git clone https://github.com/linchpinagency/rebar.git %USERPROFILE%/.grunt-init/rebar
 ```
 
 ## Usage
