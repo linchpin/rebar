@@ -1,93 +1,72 @@
 /**
- * Table of Contents for FoundationPress:
- *
- * 1.0 - Custom settings
- * 2.0 - Typography
- * 3.0 - Header, sidebar and footer
- * 4.0 - Content
- *	4.1 - Pages
- *	4.2 - Posts
- *	4.3	- Widgets
- *	4.4 - Comments
-  *	4.5 - Lists
-  * 4.6 - Forms
- * 5.0 - Plugins
-
- * ----------------------------------------------------------------------------
+ * 01. Colors
+ * 02. Spacing
  */
 
 
+// 01. Colors
+$color-map: (
+	primary     : $primary-color,
+	secondary   : $secondary-color,
+	light-gray  : $light-gray,
+	medium-gray : $medium-gray,
+	dark-gray   : $dark-gray,
+	black       : $black,
+	white       : $white
+);
 
-/**
- * 1.0 Custom settings
- * ----------------------------------------------------------------------------
- */
-
-
-// Reset margin and padding on figure element
-figure {
-	margin: 0;
-	padding: 0;
-}
-
-// Add some basic styling for figcaption element
-figcaption {
-	margin-bottom: rem-calc(20);
-	margin-top: rem-calc(10);
-	color: #6f6f6f;
-}
-
-// Add the alignment classes used by the WordPress media library
-.alignleft {
-	float: left;
-}
-
-.alignright {
-	float: right;
-}
-
-.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-blockquote,
-img {
-	&.alignleft {
-		margin: rem-calc(7) rem-calc(24) rem-calc(7) 0;
+@each $label, $hex in $color-map {
+	.background-#{$label} {
+		background-color: $hex;
 	}
-}
 
-.wp-caption.alignleft {
-	margin: rem-calc(7) rem-calc(14) rem-calc(7) 0;
-}
+	.color-#{$label} {
+		color: $hex;
+	}
 
-blockquote,
-img {
-	&.alignright {
-		margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
+	.links-#{$label} a {
+		color: $hex;
 	}
 }
 
 
-// Add some whitespace between top bar and content
-.top-bar-container, .tab-bar {
-	margin-bottom: rem-calc(32);
-}
+// 02. Spacing
+$directions: (
+	top,
+	right,
+	bottom,
+	left
+);
 
-// Fix the issue where the WP adminbar overlaps the mobile menu
-#wpadminbar {
-	position: fixed !important;
-}
+$spacing-sizes: (
+	none  : 0,
+	small : 1rem,
+	large : 4rem
+);
 
-.clickable:hover {
-	cursor: pointer;
-}
+@mixin spacing-layout( $property ) {
+	@each $direction in $directions {
+    .#{$property}-#{$direction} {
+			#{$property}-#{$direction}: 2rem;
+		}
 
-// Add some whitespace above the footer for medium-up screens
-@media #{$medium-up} {
-	footer.row {
-		margin-top: rem-calc(60);
+		@each $type, $size in $spacing-sizes {
+			.#{$property}-#{$direction}-#{$type} {
+				#{$property}-#{$direction}: $size;
+			}
+		}
 	}
+
+  .#{$property}-all {
+    #{$property}: 2rem;
+  }
+
+  @each $type, $size in $spacing-sizes {
+    .#{$property}-all-#{$type} {
+      #{$property}: $size;
+    }
+  }
 }
+
+@include spacing-layout( 'padding' );
+@include spacing-layout( 'margin' );
