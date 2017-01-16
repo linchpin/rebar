@@ -51,7 +51,7 @@ class {%= php_class_name %} {
 		add_action( 'customize_register',	array( $this, 'customize_register' ) );
 
 		add_action( 'after_setup_theme', 	array( $this, 'after_setup_theme' ) );
-		//add_action( 'after_setup_theme',	array( $this, 'add_editor_styles' ) );
+		add_action( 'after_setup_theme',	array( $this, 'add_editor_styles' ) );
 	}
 
 	/**
@@ -266,7 +266,7 @@ class {%= php_class_name %} {
 	 * add customized styles to the WordPress admin to match frontend editing
 	 */
 	function add_editor_styles() {
-		$admin_style = get_stylesheet_directory_uri() . '/css/editor.css';
+		$admin_style = get_stylesheet_directory_uri() . '/css/admin-editor.css';
 
 	    add_editor_style( $admin_style );
 	}
