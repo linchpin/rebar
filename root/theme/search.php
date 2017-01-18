@@ -47,7 +47,7 @@
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
 		do_action( 'rebar_content_after' ); ?>
 
-		<?php get_template_part( 'includes/partials/pagination' ); ?>
+		<?php get_template_part( 'partials/pagination' ); ?>
 
 	</div>
 

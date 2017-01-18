@@ -38,7 +38,7 @@ do_action( 'rebar_post_before' ); ?>
 		<?php $tag = get_the_tags(); if ( $tag ) : ?><p><?php the_tags(); ?></p><?php endif; ?>
 	</footer>
 
-	<?php get_template_part( 'includes/partials/edit-controls' ); ?>
+	<?php get_template_part( 'partials/edit-controls' ); ?>
 
 	<hr />
 </article>

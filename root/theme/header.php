@@ -38,7 +38,7 @@
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
 		do_action( 'rebar_header_before' ); ?>
 
-		<?php get_template_part( 'includes/partials/navigation' ); ?>
+		<?php get_template_part( 'partials/navigation' ); ?>
 
 		<?php
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */

@@ -43,7 +43,7 @@
 
 		<?php endif;?>
 
-		<?php get_template_part( 'includes/partials/pagination' ); ?>
+		<?php get_template_part( 'partials/pagination' ); ?>
 
 		<?php
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */

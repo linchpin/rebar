@@ -52,7 +52,7 @@ do_action( 'rebar_post_before' ); ?>
 			<div class="tags"><?php the_tags(); ?></div>
 		</footer>
 
-		<?php get_template_part( 'includes/partials/edit-controls' ); ?>
+		<?php get_template_part( 'partials/edit-controls' ); ?>
 
 		<hr/>
 
