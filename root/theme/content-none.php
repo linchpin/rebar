@@ -14,7 +14,7 @@
 
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_before' ); ?>
+do_action( 'rebar_post_before' ); ?>
 
 <header class="page-header">
 	<h1 class="page-title"><?php esc_html_e( 'Nothing Found', '{%= text_domain %}' ); ?></h1>
@@ -40,4 +40,4 @@ do_action( 'hatch_post_before' ); ?>
 
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_after' );
+do_action( 'rebar_post_after' );

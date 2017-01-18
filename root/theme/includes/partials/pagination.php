@@ -12,10 +12,10 @@
 
 ?>
 
-<?php do_action( 'hatch_pagination_before' ); ?>
+<?php do_action( 'rebar_pagination_before' ); ?>
 
-<?php if ( function_exists( 'hatch_pagination' ) ) :
-	hatch_pagination( '&laquo;', '&raquo;' );
+<?php if ( function_exists( 'rebar_pagination' ) ) :
+	rebar_pagination( '&laquo;', '&raquo;' );
 elseif ( is_paged() ) : ?>
 	<nav id="post-nav">
 		<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', '{%= text_domain %}' ) ); ?></div>
@@ -23,4 +23,4 @@ elseif ( is_paged() ) : ?>
 	</nav>
 <?php endif; ?>
 
-<?php do_action( 'hatch_pagination_after' );
+<?php do_action( 'rebar_pagination_after' );

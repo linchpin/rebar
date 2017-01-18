@@ -15,19 +15,19 @@
 
 				<?php
 				/** This action is documented in includes/Linchpin/hatch-hooks.php */
-				do_action( 'hatch_footer_before' ); ?>
+				do_action( 'rebar_footer_before' ); ?>
 
 				<footer class="row">
 
 					<?php
 					/** This action is documented in includes/Linchpin/hatch-hooks.php */
-					do_action( 'hatch_footer_inner_before' ); ?>
+					do_action( 'rebar_footer_inner_before' ); ?>
 
 					<?php dynamic_sidebar( 'footer-widgets' ); ?>
 
 					<?php
 					/** This action is documented in includes/Linchpin/hatch-hooks.php */
-					do_action( 'hatch_footer_inner_after' ); ?>
+					do_action( 'rebar_footer_inner_after' ); ?>
 
 					<nav id="footer-navigation">
 						<?php
@@ -52,13 +52,13 @@
 
 				<?php
 				/** This action is documented in includes/Linchpin/hatch-hooks.php */
-				do_action( 'hatch_footer_after' ); ?>
+				do_action( 'rebar_footer_after' ); ?>
 
 				<a class="exit-off-canvas"></a>
 
 				<?php
 				/** This action is documented in includes/Linchpin/hatch-hooks.php */
-				do_action( 'hatch_layout_end' ); ?>
+				do_action( 'rebar_layout_end' ); ?>
 
 			</div>
 		</div>
@@ -75,6 +75,6 @@
 		 *
 		 */
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
-		do_action( 'hatch_body_before_close' ); ?>
+		do_action( 'rebar_body_before_close' ); ?>
 	</body>
 </html>

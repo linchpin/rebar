@@ -14,17 +14,17 @@
 
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_before' ); ?>
+do_action( 'rebar_post_before' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
 		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<?php hatch_entry_meta(); ?>
+		<?php rebar_entry_meta(); ?>
 	</header>
 
 	<?php
 	/** This action is documented in includes/Linchpin/hatch-hooks.php */
-	do_action( 'hatch_post_entry_content_before' ); ?>
+	do_action( 'rebar_post_entry_content_before' ); ?>
 
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading...', '{%= text_domain %}' ) ); ?>
@@ -32,7 +32,7 @@ do_action( 'hatch_post_before' ); ?>
 
 	<?php
 	/** This action is documented in includes/Linchpin/hatch-hooks.php */
-	do_action( 'hatch_post_entry_content_after' ); ?>
+	do_action( 'rebar_post_entry_content_after' ); ?>
 
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) : ?><p><?php the_tags(); ?></p><?php endif; ?>
@@ -45,4 +45,4 @@ do_action( 'hatch_post_before' ); ?>
 
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_after');
+do_action( 'rebar_post_after');

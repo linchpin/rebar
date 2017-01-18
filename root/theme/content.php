@@ -14,13 +14,13 @@
 
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_before' ); ?>
+do_action( 'rebar_post_before' ); ?>
 
 	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
 		<header>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			<?php hatch_entry_meta(); ?>
+			<?php rebar_entry_meta(); ?>
 		</header>
 
 		<div class="entry-content">
@@ -35,13 +35,13 @@ do_action( 'hatch_post_before' ); ?>
 
 			<?php
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
-			do_action( 'hatch_post_entry_content_before' ); ?>
+			do_action( 'rebar_post_entry_content_before' ); ?>
 
 			<?php the_content(); ?>
 
 			<?php
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
-			do_action( 'hatch_post_entry_content_after' ); ?>
+			do_action( 'rebar_post_entry_content_after' ); ?>
 		</div>
 
 		<footer>
@@ -66,4 +66,4 @@ do_action( 'hatch_post_before' ); ?>
 	</article>
 <?php
 /** This action is documented in includes/Linchpin/hatch-hooks.php */
-do_action( 'hatch_post_after' );
+do_action( 'rebar_post_after' );

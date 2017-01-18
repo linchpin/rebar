@@ -76,7 +76,7 @@ class {%= php_class_name %} {
 	 * @return void
 	 */
 	function admin_footer_text() {
-		echo 'Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Created by <a href="{%= author_url %}/?utm_source=hatch&utm_medium=hatch_footer&utm_campaign=hatch_notice" target="_blank">{%= author_name %}</a> and augmented by the <a href="http://github.com/linchpinagency/hatch/?utm_source=hatch&utm_medium=hatch_footer&utm_campaign=hatch_notice" target="_blank">Hatch</a>';
+		echo 'Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Created by <a href="{%= author_url %}/?utm_source=hatch&utm_medium=rebar_footer&utm_campaign=rebar_notice" target="_blank">{%= author_name %}</a> and augmented by the <a href="http://github.com/linchpinagency/hatch/?utm_source=hatch&utm_medium=rebar_footer&utm_campaign=rebar_notice" target="_blank">Hatch</a>';
 	}
 
 	/**

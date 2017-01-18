@@ -20,7 +20,7 @@
 
 			<?php
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
-			do_action( 'hatch_post_entry_content_before' ); ?>
+			do_action( 'rebar_post_entry_content_before' ); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -34,9 +34,9 @@
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( function_exists( 'hatch_categorized_blog' ) ) : ?>
+					<?php if ( function_exists( 'rebar_categorized_blog' ) ) : ?>
 
-						<?php if ( hatch_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+						<?php if ( rebar_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 							<div class="widget widget_categories">
 								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', '{%= text_domain %}' ); ?></h2>
 								<ul>
@@ -58,7 +58,7 @@
 
 						<?php
 						/** This action is documented in includes/Linchpin/hatch-hooks.php */
-						do_action( 'hatch_content_before' ); ?>
+						do_action( 'rebar_content_before' ); ?>
 
 						<div class="error">
 							<p class="bottom"><?php esc_html_e( 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.', '{%= text_domain %}' ); ?></p>
@@ -73,14 +73,14 @@
 
 					<?php
 					/** This action is documented in includes/Linchpin/hatch-hooks.php */
-					do_action( 'hatch_content_after' ); ?>
+					do_action( 'rebar_content_after' ); ?>
 
 				</div>
 			</section>
 
 			<?php
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
-			do_action( 'hatch_post_entry_content_after' ); ?>
+			do_action( 'rebar_post_entry_content_after' ); ?>
 
 		</main>
 	</div>

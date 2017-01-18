@@ -24,10 +24,10 @@ class Hatch {
 	 * Construct
 	 */
 	function __construct() {
-		$hatch_activate = new HatchActivate();
-		$hatch_custom_header = new HatchCustomHeader();
-		$hatch_option_controls = new HatchOptions();
-		$hatch_utilities = new HatchUtilities();
-		$hatch_menu = new HatchMenu();
+		$rebar_activate = new HatchActivate();
+		$rebar_custom_header = new HatchCustomHeader();
+		$rebar_option_controls = new HatchOptions();
+		$rebar_utilities = new HatchUtilities();
+		$rebar_menu = new HatchMenu();
 	}
 }
