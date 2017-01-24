@@ -19,11 +19,7 @@
 		</div>
 
 		<div class="medium-6 columns end">
-			<a class="download large button hide-for-small" href="https://github.com/linchpinagency/hatch"><?php esc_html_e( 'Download Hatch', '{%= text_domain %}' ); ?></a>
-		</div>
-
-		<div class="floatingyeti show-for-medium-up">
-			<img data-cfsrc="http://foundation.zurb.com/assets/img/homepage/hero-image.svg" alt="Foundation Yeti" src="http://foundation.zurb.com/assets/img/homepage/hero-image.svg">
+			<a class="download large button hide-for-small" href="https://github.com/linchpinagency/hatch"><?php esc_html_e( 'Download Rebar', '{%= text_domain %}' ); ?></a>
 		</div>
 	</div>
 </header>
