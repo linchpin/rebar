@@ -10,7 +10,7 @@ var gulp         = require( 'gulp' ),
 
 // Uglify JS
 gulp.task( 'scripts', function() {
-	return gulp.src(['./bower_components/foundation-sites/dist/foundation.min.js', './assets/js/*.js'])
+	return gulp.src(['./bower_components/foundation-sites/dist/js/foundation.min.js', './assets/js/*.js'])
 		.pipe( concat('{%= js_safe_name %}.js') )
 		.pipe( gulp.dest('./js') );
 } );

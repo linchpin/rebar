@@ -1,4 +1,15 @@
-.name img {
-  height : 80%;
-  margin : 5px;
+/**
+ * 01. Top bar
+ */
+
+// 01. Top bar
+.top-bar {
+	height: $topbar-height;
+	line-height: $topbar-height;
+
+	.top-bar-left,
+	.top-bar-right {
+		line-height: $topbar-height - 1rem;
+		width: auto;
+	}
 }

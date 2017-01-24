@@ -9,7 +9,6 @@
  */
 
 include( 'hatch-options.php' );
-include( 'hatch-customheader.php' );
 include( 'hatch-activate.php' );
 include( 'hatch-utilities.php' );
 include( 'hatch-menu.php' );
@@ -25,7 +24,6 @@ class Hatch {
 	 */
 	function __construct() {
 		$rebar_activate = new HatchActivate();
-		$rebar_custom_header = new HatchCustomHeader();
 		$rebar_option_controls = new HatchOptions();
 		$rebar_utilities = new HatchUtilities();
 		$rebar_menu = new HatchMenu();

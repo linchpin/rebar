@@ -27,8 +27,27 @@
 
 <?php do_action( 'rebar_body_tag_after' ); ?>
 
-<div class="off-canvas-wrap" data-offcanvas>
-	<div class="inner-wrap">
+<div class="off-canvas-wrapper">
+	<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+		<?php
+		wp_nav_menu( array(
+			'container'       => false,
+			'container_class' => '',
+			'menu'            => '',
+			'menu_class'      => 'off-canvas-list',
+			'theme_location'  => 'mobile-off-canvas',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'depth'           => 5,
+			'fallback_cb'     => false,
+			'walker'          => new Foundation_Walker_Nav_Menu(), // Use Custom Foundation Walker.
+		) );
+		?>
+	</div>
+
+	<div class="inner-wrap off-canvas-content" data-off-canvas-content>
 
 		<?php
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
