@@ -35,7 +35,7 @@ if ( isset( $options['logo_upload'] ) ) {
 	</section>
 </nav>
 
-<div id="main-menu" class="show-for-medium" data-parent="<?php esc_attr_e( $post->post_type ); ?>">
+<div id="main-menu" class="show-for-medium-up" data-parent="<?php esc_attr_e( $post->post_type ); ?>">
 	<div class="top-bar" data-topbar="">
 		<div class="top-bar-title">
 			<a href="<?php esc_attr_e( home_url() ); ?>">
