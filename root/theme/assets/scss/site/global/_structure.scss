@@ -1,20 +1,11 @@
 /**
  * 01. Colors
  * 02. Spacing
+ * 03. Container
  */
 
 
 // 01. Colors
-$color-map: (
-	primary     : $primary-color,
-	secondary   : $secondary-color,
-	light-gray  : $light-gray,
-	medium-gray : $medium-gray,
-	dark-gray   : $dark-gray,
-	black       : $black,
-	white       : $white
-);
-
 @each $label, $hex in $color-map {
 	.background-#{$label} {
 		background-color: $hex;
@@ -31,42 +22,32 @@ $color-map: (
 
 
 // 02. Spacing
-$directions: (
-	top,
-	right,
-	bottom,
-	left
-);
-
-$spacing-sizes: (
-	none  : 0,
-	small : 1rem,
-	large : 4rem
-);
-
-@mixin spacing-layout( $property ) {
-	@each $direction in $directions {
-    .#{$property}-#{$direction} {
-			#{$property}-#{$direction}: 2rem;
-		}
-
-		@each $type, $size in $spacing-sizes {
-			.#{$property}-#{$direction}-#{$type} {
-				#{$property}-#{$direction}: $size;
-			}
-		}
-	}
-
-  .#{$property}-all {
-    #{$property}: 2rem;
-  }
-
-  @each $type, $size in $spacing-sizes {
-    .#{$property}-all-#{$type} {
-      #{$property}: $size;
-    }
-  }
-}
-
 @include spacing-layout( 'padding' );
 @include spacing-layout( 'margin' );
+
+@include breakpoint(medium up) {
+	@include spacing-layout( 'padding', 'medium' );
+	@include spacing-layout( 'margin', 'medium' );
+}
+
+@include breakpoint(large up) {
+	@include spacing-layout( 'padding', 'large' );
+	@include spacing-layout( 'margin', 'large' );
+}
+
+// 03. Container
+.container {
+	padding: {
+		bottom: map-get($spacing-sizes, small);
+		top: map-get($spacing-sizes, small);
+	};
+
+	@include breakpoint(medium up) {
+		&:not(.small) {
+			padding: {
+				bottom: map-get($spacing-sizes, medium);
+				top: map-get($spacing-sizes, medium);
+			};
+		}
+	}
+}

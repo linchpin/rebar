@@ -1,0 +1,33 @@
+/**
+ * 01. Global
+ * 02. Main Footer
+ * 03. Sub Footer
+ */
+
+
+// 01. Global
+#footer {
+	
+}
+
+
+// 02. Main Footer
+.main-footer {
+	background-color: $footer-bg-color;
+	color: $footer-text-color;
+
+	a {
+		color: $footer-link-color;
+	}
+}
+
+
+// 03. Sub Footer
+.sub-footer {
+	background-color: $subfooter-bg-color;
+	color: $subfooter-text-color;
+
+	a {
+		color: $subfooter-link-color;
+	}
+}

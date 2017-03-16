@@ -11,43 +11,54 @@
  */
 
 ?>
+
 				</section>
 
 				<?php
 				/** This action is documented in includes/Linchpin/hatch-hooks.php */
 				do_action( 'rebar_footer_before' ); ?>
 
-				<footer class="row">
+				<footer id="footer">
+					<div class="main-footer container small">
+						<div class="row">
+							<?php
+							/** This action is documented in includes/Linchpin/hatch-hooks.php */
+							do_action( 'rebar_footer_inner_before' ); ?>
 
-					<?php
-					/** This action is documented in includes/Linchpin/hatch-hooks.php */
-					do_action( 'rebar_footer_inner_before' ); ?>
+							<?php dynamic_sidebar( 'footer-widgets' ); ?>
 
-					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+							<?php
+							/** This action is documented in includes/Linchpin/hatch-hooks.php */
+							do_action( 'rebar_footer_inner_after' ); ?>
+						</div>
+					</div>
 
-					<?php
-					/** This action is documented in includes/Linchpin/hatch-hooks.php */
-					do_action( 'rebar_footer_inner_after' ); ?>
+					<div class="sub-footer container small">
+						<div class="row">
+							<div class="small-12 medium-6 columns">
+								<?php
+									wp_nav_menu( array(
+										'container'       => false,
+										'container_class' => '',
+										'menu'            => '',
+										'menu_class'      => 'social menu',
+										'theme_location'  => 'social',
+										'before'          => '',
+										'after'           => '',
+										'link_before'     => '',
+										'link_after'      => '',
+										'depth'           => 5,
+										'fallback_cb'     => false,
+										'walker'          => new Foundation_Walker_Nav_Menu(),
+									) );
+								?>
+							</div>
 
-					<nav id="footer-navigation">
-						<?php
-						wp_nav_menu( array(
-							'container'       => false,
-							'container_class' => '',
-							'menu'            => '',
-							'menu_class'      => 'footer-menu',
-							'theme_location'  => 'footer',
-							'before'          => '',
-							'after'           => '',
-							'link_before'     => '',
-							'link_after'      => '',
-							'depth'           => 5,
-							'fallback_cb'     => false,
-							'walker'          => new Foundation_Walker_Nav_Menu(),
-						) );
-						?>
-					</nav>
-
+							<div class="small-12 medium-6 columns text-right">
+								<?php echo sprintf( '&copy; %s %s. All Rights Reserved.', date( 'Y' ), __( get_bloginfo( 'name' ), '{%= text_domain %}' ) ); ?>
+							</div>
+						</div>
+					</div>
 				</footer>
 
 				<?php

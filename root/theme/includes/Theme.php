@@ -64,7 +64,8 @@ class {%= php_class_name %} {
 		register_nav_menus( array(
 		    'top-bar' 			=> 'Top Bar', // registers the menu in the WordPress admin menu editor
 		    'footer' 			=> 'Footer',
-		    'mobile-off-canvas' => 'Mobile (Off Canvas)'
+		    'mobile-off-canvas' => 'Mobile (Off Canvas)',
+		    'social'            => 'Social Links',
 		));
 	}
 

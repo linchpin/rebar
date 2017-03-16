@@ -63,4 +63,4 @@
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
 		do_action( 'rebar_header_after' ); ?>
 
-		<section class="container" role="document">
+		<section role="document">
