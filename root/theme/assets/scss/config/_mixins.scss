@@ -1,6 +1,7 @@
 /**
  * 01. Spacing
  * 02. Placeholder
+ * 03. Global Forms
  */
 
 
@@ -53,4 +54,12 @@
   &:-ms-input-placeholder {
     @content;
   }
+}
+
+
+// 03. Global Forms
+@mixin global-form-styles {
+  background: white;
+  border: 1px solid $medium-gray;
+  box-shadow: none;
 }

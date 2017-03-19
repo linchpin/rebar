@@ -5,6 +5,8 @@
  * 04. Topbar Extended
  * 05. Primary Menu
  * 06. Footer
+ * 07. Forms
+ * 08. Comments
  */
 
 
@@ -66,3 +68,15 @@ $footer-link-color: $footer-text-color;
 $subfooter-bg-color:   $dark-gray;
 $subfooter-text-color: $light-gray;
 $subfooter-link-color: $subfooter-text-color;
+
+
+// 07. Forms
+$form-item-padding: .5rem;
+
+
+// 08. Comments
+$comment-border-radius: 0;
+$comment-original-bg:   scale-color( $light-gray, $lightness: 50% );
+$comment-border-color:  $medium-gray;
+$comment-reply-bg:      $white;
+$comment-gutter:        1.5rem;

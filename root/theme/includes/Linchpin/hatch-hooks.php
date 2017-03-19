@@ -1,10 +1,10 @@
 <?php
 /**
- * Hatch Action Hooks
+ * Rebar Action Hooks
  *
  * Just a bunch of utility methods associated with our hooks
  *
- * @package Hatch
+ * @package Rebar
  * @since 1.0.0
  */
 
@@ -13,7 +13,7 @@
 <?php
 
 /**
- * Hatch rebar_comments_before hook.
+ * Rebar rebar_comments_before hook.
  * Add extra content before the comments are started.
  *
  * @since 2.0.0
@@ -23,7 +23,7 @@ function rebar_comments_before() {
 }
 
 /**
- * Hatch rebar_comments_after hook.
+ * Rebar rebar_comments_after hook.
  * Add extra content after the comments are done.
  *
  * @since 2.0.0
@@ -33,7 +33,7 @@ function rebar_comments_after() {
 }
 
 /**
- * Hatch rebar_head_scripts hook.
+ * Rebar rebar_head_scripts hook.
  * Allow for additional scripts be be hooked into.
  * We utilize this for additional_head_scripts.
  *
@@ -44,7 +44,7 @@ function rebar_head_scripts() {
 }
 
 /**
- * Hatch rebar_header_before hook.
+ * Rebar rebar_header_before hook.
  * Ability to add stuff before our headers.
  *
  * @since 2.0.0
@@ -54,7 +54,7 @@ function rebar_header_before() {
 }
 
 /**
- * Hatch rebar_header_inner_before hook.
+ * Rebar rebar_header_inner_before hook.
  * Add some content within our header but before the rest
  * of our navigation.
  *
@@ -65,7 +65,7 @@ function rebar_header_inner_before() {
 }
 
 /**
- * Hatch rebar_header_inner_after
+ * Rebar rebar_header_inner_after
  * Add some content within our header but before the rest
  * of our navigation.
  *
@@ -76,9 +76,9 @@ function rebar_header_inner_after() {
 }
 
 /**
- * Hatch header_after hook
+ * Rebar header_after hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0.0
@@ -88,9 +88,9 @@ function rebar_header_after() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0.0
@@ -100,9 +100,9 @@ function rebar_content_before() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0.0
@@ -112,9 +112,9 @@ function rebar_content_after() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -124,9 +124,9 @@ function rebar_post_before() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -136,9 +136,9 @@ function rebar_post_after() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -148,9 +148,9 @@ function rebar_post_inside_before() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -160,9 +160,9 @@ function rebar_post_inside_after() {
 }
 
 /**
- * Hatch rebar_loop_before hook
+ * Rebar rebar_loop_before hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -172,9 +172,9 @@ function rebar_loop_before() {
 }
 
 /**
- * Hatch rebar_loop_after hook
+ * Rebar rebar_loop_after hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -184,9 +184,9 @@ function rebar_loop_after() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -196,9 +196,9 @@ function rebar_sidebar_before() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -208,9 +208,9 @@ function rebar_sidebar_inner_before() {
 }
 
 /**
- * Middleman hatch hook
+ * Middleman rebar hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -220,9 +220,9 @@ function rebar_sidebar_inner_after() {
 }
 
 /**
- * Hatch rebar_sidebar_after hook
+ * Rebar rebar_sidebar_after hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -232,9 +232,9 @@ function rebar_sidebar_after() {
 }
 
 /**
- * Hatch rebar_footer_before hook
+ * Rebar rebar_footer_before hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -244,33 +244,57 @@ function rebar_footer_before() {
 }
 
 /**
- * Hatch rebar_footer_inner_before hook
+ * Rebar rebar_main_footer_inner_before hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
  */
-function rebar_footer_inner_before() {
-	do_action( 'rebar_footer_inner_before' );
+function rebar_main_footer_inner_before() {
+	do_action( 'rebar_main_footer_inner_before' );
 }
 
 /**
- * Hatch rebar_footer_inner_after hook
+ * Rebar rebar_main_footer_inner_after hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
  */
-function rebar_footer_inner_after() {
-	do_action( 'rebar_footer_inner_after' );
+function rebar_main_footer_inner_after() {
+	do_action( 'rebar_main_footer_inner_after' );
 }
 
 /**
- * Hatch rebar_footer_after hook
+ * Rebar rebar_sub_footer_inner_before hook
  *
- * @package Hatch
+ * @package Rebar
+ * @subpackage hooks
+ *
+ * @since 2.0
+ */
+function rebar_sub_footer_inner_before() {
+	do_action( 'rebar_sub_footer_inner_before' );
+}
+
+/**
+ * Rebar rebar_sub_footer_inner_after hook
+ *
+ * @package Rebar
+ * @subpackage hooks
+ *
+ * @since 2.0
+ */
+function rebar_sub_footer_inner_after() {
+	do_action( 'rebar_sub_footer_inner_after' );
+}
+
+/**
+ * Rebar rebar_footer_after hook
+ *
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0
@@ -280,9 +304,9 @@ function rebar_footer_after() {
 }
 
 /**
- * Hatch rebar_footer_scripts hook
+ * Rebar rebar_footer_scripts hook
  *
- * @package Hatch
+ * @package Rebar
  * @subpackage hooks
  *
  * @since 2.0

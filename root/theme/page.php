@@ -14,9 +14,9 @@
 
 <?php get_header(); ?>
 
-	<div class="row">
+	<div class="row container">
 
-		<div class="small-12 large-8 columns" role="main">
+		<div class="small-12 columns" role="main">
 
 			<?php
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
@@ -48,16 +48,7 @@
 			/** This action is documented in includes/Linchpin/hatch-hooks.php */
 			do_action( 'rebar_content_after' ); ?>
 
-			<?php
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif; ?>
-
 		</div>
-
-		<?php get_sidebar(); ?>
 
 	</div>
 <?php get_footer();

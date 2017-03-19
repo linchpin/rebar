@@ -20,20 +20,28 @@
 
 				<footer id="footer">
 					<div class="main-footer container small">
+						<?php
+						/** This action is documented in includes/Linchpin/hatch-hooks.php */
+						do_action( 'rebar_main_footer_inner_before' ); ?>
+
 						<div class="row">
-							<?php
-							/** This action is documented in includes/Linchpin/hatch-hooks.php */
-							do_action( 'rebar_footer_inner_before' ); ?>
+							<div class="small-12 columns">
 
-							<?php dynamic_sidebar( 'footer-widgets' ); ?>
+								<?php dynamic_sidebar( 'footer-widgets' ); ?>
 
-							<?php
-							/** This action is documented in includes/Linchpin/hatch-hooks.php */
-							do_action( 'rebar_footer_inner_after' ); ?>
+							</div>
 						</div>
+
+						<?php
+						/** This action is documented in includes/Linchpin/hatch-hooks.php */
+						do_action( 'rebar_main_footer_inner_after' ); ?>
 					</div>
 
 					<div class="sub-footer container small">
+						<?php
+						/** This action is documented in includes/Linchpin/hatch-hooks.php */
+						do_action( 'rebar_sub_footer_inner_before' ); ?>
+
 						<div class="row">
 							<div class="small-12 medium-6 columns">
 								<?php
@@ -58,6 +66,10 @@
 								<?php echo sprintf( '&copy; %s %s. All Rights Reserved.', date( 'Y' ), __( get_bloginfo( 'name' ), '{%= text_domain %}' ) ); ?>
 							</div>
 						</div>
+
+						<?php
+						/** This action is documented in includes/Linchpin/hatch-hooks.php */
+						do_action( 'rebar_sub_footer_inner_after' ); ?>
 					</div>
 				</footer>
 

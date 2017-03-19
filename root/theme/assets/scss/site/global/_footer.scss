@@ -19,6 +19,20 @@
 	a {
 		color: $footer-link-color;
 	}
+
+	.menu,
+	.sub-menu {
+		list-style: none;
+	}
+
+	.sub-menu {
+		margin: .5rem 0 0;
+
+		a {
+			font-size: .875rem;
+			padding: $menu-item-padding;
+		}
+	}
 }
 
 

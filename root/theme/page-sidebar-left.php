@@ -46,14 +46,8 @@
 		/** This action is documented in includes/Linchpin/hatch-hooks.php */
 		do_action( 'rebar_content_after' ); ?>
 
-		<?php
-
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif; ?>
-
 	</div>
-	<?php get_sidebar(); ?>
+
+	<?php get_sidebar( 'left' ); ?>
 </div>
 <?php get_footer();

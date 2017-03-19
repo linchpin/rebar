@@ -18,8 +18,7 @@ do_action( 'rebar_post_before' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header>
-		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<?php rebar_entry_meta(); ?>
+		<h1><?php the_title(); ?></h1>
 	</header>
 
 	<?php
@@ -34,13 +33,7 @@ do_action( 'rebar_post_before' ); ?>
 	/** This action is documented in includes/Linchpin/hatch-hooks.php */
 	do_action( 'rebar_post_entry_content_after' ); ?>
 
-	<footer>
-		<?php $tag = get_the_tags(); if ( $tag ) : ?><p><?php the_tags(); ?></p><?php endif; ?>
-	</footer>
-
 	<?php get_template_part( 'partials/edit-controls' ); ?>
-
-	<hr />
 </article>
 
 <?php
