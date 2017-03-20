@@ -14,7 +14,7 @@
 
 <?php get_header(); ?>
 
-<div class="row">
+<div class="row container">
 	<div class="small-12 medium-8 columns" role="main">
 
 

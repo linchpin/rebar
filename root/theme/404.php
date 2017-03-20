@@ -15,7 +15,7 @@
 <?php get_header(); ?>
 
 <div id="primary" class="content-area">
-	<div class="row">
+	<div class="row container">
 		<main id="main" class="site-main small-12 large-8 columns" role="main">
 
 			<?php

@@ -13,7 +13,7 @@
 ?>
 <?php get_header(); ?>
 
-<div class="row">
+<div class="row container">
 	<div class="small-12 large-8 large-push-4 columns" role="main">
 
 		<?php
