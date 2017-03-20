@@ -12,6 +12,6 @@
 
 ?>
 
-<ul class="button-group utility right">
-	<?php edit_post_link( __( 'Edit Content', '{%= text_domain %}' ) , '<li class="tiny button">', '</li>' ); ?>
-</ul>
+<div class="utility edit-post-link-container">
+	<?php edit_post_link( __( 'Edit Content', '{%= text_domain %}' ) , '<span class="float-right">', '</span>', '', esc_attr( 'button', '{%= text_domain %}' ) ); ?>
+</div>
