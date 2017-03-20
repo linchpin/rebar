@@ -35,6 +35,7 @@
 			'container_class' => '',
 			'menu'            => '',
 			'menu_class'      => 'off-canvas-list',
+			'items_wrap'      => '<ul id="%1$s" class="%2$s" data-drilldown>%3$s</ul>',
 			'theme_location'  => 'mobile-off-canvas',
 			'before'          => '',
 			'after'           => '',
