@@ -68,7 +68,7 @@ exports.template = function( grunt, init, done ) {
             message: 'Would you like to create "/wp-content/themes/" parent directories?',
             default: 'Y/n'
         },
-        init.prompt( 'base_version', '0.1.0' ),
+        init.prompt( 'base_version', '1.0.0' ),
         init.prompt( 'description', 'A brief description about the theme or client.' ),
         init.prompt( 'homepage', 'http://linchpin.agency' ),
         init.prompt( 'author_name' ),

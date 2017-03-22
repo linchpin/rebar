@@ -10,9 +10,20 @@ var gulp         = require( 'gulp' ),
 
 // Uglify JS
 gulp.task( 'scripts', function() {
-	return gulp.src(['./bower_components/foundation-sites/dist/js/foundation.min.js', './assets/js/*.js'])
-		.pipe( concat('{%= js_safe_name %}.js') )
-		.pipe( gulp.dest('./js') );
+	return gulp.src([
+		'./bower_components/foundation-sites/dist/js/foundation.min.js',
+
+		/* Load all the util libraries */
+		// './assets/js/utils/*.js',
+
+		/* Or just some of them */
+		// './assets/js/utils/jquery.infinitescroll.min.js',
+		'./assets/js/utils/utils.js',
+
+		'./assets/js/site/*.js'
+	])
+	.pipe( concat('{%= js_safe_name %}.js') )
+	.pipe( gulp.dest('./js') );
 } );
 
 // Sass
