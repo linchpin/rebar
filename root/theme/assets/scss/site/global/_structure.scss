@@ -50,4 +50,13 @@
 			};
 		}
 	}
+
+	@include breakpoint(large up) {
+		&.large {
+			padding: {
+				bottom: map-get($spacing-sizes, large);
+				top: map-get($spacing-sizes, large);
+			};
+		}
+	}
 }
