@@ -62,7 +62,7 @@ gulp.task( 'imagemin', function() {
 // Watch
 gulp.task( 'watch', ['sass'], function() {
 	gulp.watch('./assets/scss/**/*.scss', ['sass', 'autoprefixer']);
-	gulp.watch('./assets/js/*.js', ['scripts']);
+	gulp.watch('./assets/js/**/*.js', ['scripts']);
 } );
 
 // Default "gulp" task
