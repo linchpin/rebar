@@ -49,9 +49,7 @@
                                     <td>
                                         <div>
                                             <label class="screen-reader-text" for="additional_header_scripts"><span><?php esc_html_e( 'Additional Head Scripts', 'hatch' ); ?></span></label>
-                                            <textarea name="rebar_theme_options[additional_header_scripts]" class="html-textarea" id="additional_header_scripts">
-<?php esc_attr_e( $rebar_options['additional_header_scripts'] ); ?>
-</textarea>
+                                            <textarea name="rebar_theme_options[additional_header_scripts]" class="html-textarea" id="additional_header_scripts"><?php esc_attr_e( $rebar_options['additional_header_scripts'] ); ?></textarea>
                                             <p class="description"><?php printf( esc_html( __( 'This area will include scripts within the <strong>&lt;HEAD&gt;</strong> tag of your website. In most cases you can use the footer scripts below. Through some scripts require being loaded within the <strong>&lt;HEAD&gt;</strong> tag.' ), 'hatch' ) ); ?></p>
                                         </div>
                                     </td>
@@ -67,9 +65,7 @@
                                     <td>
                                         <div>
                                             <label class="screen-reader-text" for="additional_footer_scripts"><span><?php esc_html_e( 'Additional Footer Scripts', 'hatch' ); ?></span></label>
-                                            <textarea name="rebar_theme_options[additional_footer_scripts]" class="html-textarea" id="additional_footer_scripts">
-                                                <?php esc_attr_e( $rebar_options['additional_footer_scripts'] ); ?>
-                                            </textarea>
+                                            <textarea name="rebar_theme_options[additional_footer_scripts]" class="html-textarea" id="additional_footer_scripts"><?php esc_attr_e( $rebar_options['additional_footer_scripts'] ); ?></textarea>
                                             <p class="description"><?php printf( esc_html( __( 'Within this area you can include any additional 3rd party scripts. Examples would include javascript needed for Twitter, HubSpot and other features not included by default within your theme' ), 'hatch' ) ); ?></p>
                                         </div>
                                     </td>

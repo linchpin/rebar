@@ -164,9 +164,9 @@ function theme_options_render_page() {
 
 		<h2 class="nav-tab-wrapper">
 			<a href="?page=theme_options&tab=display_options"
-			   class="nav-tab <?php echo ( 'display_options' === $active_tab ) ? 'nav-tab-active' : ''; ?>"><?php printf( esc_html( __( '%s$1 Additional Footer Content', 'hatch' ) ), esc_html( $current_theme->get( 'Name' ) ) ); ?></a>
+			   class="nav-tab <?php echo ( 'display_options' === $active_tab ) ? 'nav-tab-active' : ''; ?>"><?php printf( esc_html( __( '%s Additional Footer Content', 'hatch' ) ), esc_html( $current_theme->get( 'Name' ) ) ); ?></a>
 			<a href="?page=theme_options&tab=script_options"
-			   class="nav-tab <?php echo ( 'script_options' === $active_tab ) ? 'nav-tab-active' : ''; ?>"><?php printf( esc_html( __( '%s$1 Additional Scripts', 'hatch' ) ), esc_html( $current_theme->get( 'Name' ) ) ); ?></a>
+			   class="nav-tab <?php echo ( 'script_options' === $active_tab ) ? 'nav-tab-active' : ''; ?>"><?php printf( esc_html( __( '%s Additional Scripts', 'hatch' ) ), esc_html( $current_theme->get( 'Name' ) ) ); ?></a>
 		</h2>
 
 		<?php settings_errors(); ?>
@@ -178,9 +178,9 @@ function theme_options_render_page() {
 			$rebar_default_options = self::get_default_theme_options();
 
 			if ( 'display_options' === $active_tab ) {
-				require_once( $linchpin_classes_dir . '/hatch-options/theme-options.php' );
+				include_once( 'hatch-options/theme-options.php' );
 			} elseif ( 'script_options' === $active_tab ) {
-				require_once( $linchpin_classes_dir . '/hatch-options/integration-options.php' );
+				include_once( 'hatch-options/integration-options.php' );
 			} ?>
 			<input type="hidden" value="1" name="rebar_theme_options[first_run]"/>
 			<?php submit_button(); ?>
