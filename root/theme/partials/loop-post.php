@@ -19,7 +19,7 @@ do_action( 'rebar_post_before' ); ?>
 	<article <?php post_class( 'small-12 medium-6 large-4 columns' ) ?> id="post-<?php the_ID(); ?>" data-equalizer-watch>
 
 		<header>
-			<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
+			<?php the_title( '<h3 class="entry-title"><a href="' . get_the_permalink() . '">', '</a></h3>' ); ?>
 			<?php rebar_entry_meta(); ?>
 		</header>
 
