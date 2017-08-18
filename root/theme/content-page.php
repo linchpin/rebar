@@ -17,9 +17,11 @@
 do_action( 'rebar_post_before' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<h1><?php the_title(); ?></h1>
-	</header>
+    <?php if ( ! in_array( basename( get_page_template() ), $templates_with_title ) ) : ?>
+        <header>
+            <h1><?php the_title(); ?></h1>
+        </header>
+    <?php endif; ?>
 
 	<?php
 	/** This action is documented in includes/Linchpin/hatch-hooks.php */

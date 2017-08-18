@@ -30,3 +30,8 @@ include_once( 'includes/{%= php_class_name %}.php' ); // Theme Class
  */
 
 $theme = new {%= php_class_name %}();
+
+$templates_with_title = array(
+	'page-beefy-header.php',
+	'page-slim-header.php'
+);

@@ -6,6 +6,7 @@
 
 
 // 01. Spacing
+
 @mixin spacing-layout( $property, $prefix: '' ) {
   $property_class: #{$property} !default;
 
@@ -14,7 +15,7 @@
   }
 
   @each $direction in $directions {
-      .#{$property_class}-#{$direction} {
+    .#{$property_class}-#{$direction} {
       #{$property}-#{$direction}: 2rem;
     }
 
@@ -38,6 +39,7 @@
 
 
 // 02. Placeholder
+
 @mixin placeholder-style() {
   &::-webkit-input-placeholder {
     @content;
@@ -58,6 +60,7 @@
 
 
 // 03. Global Forms
+
 @mixin global-form-styles {
   background: white;
   border: 1px solid $medium-gray;
