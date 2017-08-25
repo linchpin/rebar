@@ -10,6 +10,7 @@
  * @subpackage Templates
  */
 
+global $rebar_templates_with_title;
 ?>
 
 <?php
@@ -17,7 +18,7 @@
 do_action( 'rebar_post_before' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <?php if ( ! in_array( basename( get_page_template() ), $templates_with_title ) ) : ?>
+    <?php if ( ! in_array( basename( get_page_template() ), $rebar_templates_with_title ) ) : ?>
         <header>
             <h1><?php the_title(); ?></h1>
         </header>
