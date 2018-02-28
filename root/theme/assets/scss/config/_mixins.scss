@@ -26,8 +26,8 @@
     }
   }
 
-  .#{$property}-all {
-    #{$property_class}: 2rem;
+  .#{$property_class}-all {
+    #{$property}: 2rem;
   }
 
   @each $type, $size in $spacing-sizes {
