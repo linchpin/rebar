@@ -15,7 +15,7 @@
  */
 
 // Useful global constants
-define( '{%= prefix_caps %}VERSION', '{%= project_version %}' );
+define( '{%= prefix_caps %}VERSION', '{%= base_version %}' );
 
 if ( ! defined( 'SCRIPT_DEBUG' ) ) {
 	define( 'SCRIPT_DEBUG', true ); // enable script debug by default
