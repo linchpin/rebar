@@ -89,7 +89,8 @@ exports.template = function( grunt, init, done ) {
             "gulp-imagemin": "^2.4.0",
             "gulp-sass": "^2.2.0",
             "gulp-watch": "^4.3.5",
-            "imagemin-pngquant": "^4.2.2"
+            "imagemin-pngquant": "^4.2.2",
+            "gulp-bump": "^3.1.0"
         };
 
         // Sanitize names where we need to for PHP/JS
